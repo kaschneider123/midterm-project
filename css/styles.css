@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: #E5E5E5;
+    font-family: "roboto","nunito sans","Helvetica", "sans-serif";  
+}
+
+h1,h2,h3,h4{
+    font-weight:400px;;
+}
+
+/*--header--------------------------------------------------------------------------------*/
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: auto;    
+    max-width: 1099px;    
+}
+
+.nav-bar ul{   
+    display: flex;
+    position:relative;
+    justify-content:right;
+    list-style: none;
+    gap: 30px;
+    font-weight: bold;
+}
+
+.buttonNav-Bar{
+    color: rgb(255, 255, 255);
+    background-color: #072AC8;   
+    width: 150px; 
+    height: 52px;
+    border: none;
+}
+
+/*--Section 1 / Business-------------------------------------------------------------------*/
+
+.contenedorHero{
+   height: 650px;
+   width: 1440px;  
+   display: flex; 
+   justify-content: center;    
+}
+
+.contenedorHero ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 422px;
+    height: 530px;
+}
+
+.contenedorHero h1 {
+    font-size: 50px;
+}
+
+.contenedorHero p {
+    font-size: 20px;
+}
+
+.contenedorHero .btn-touch {
+    width: 150px;
+    height: 52px;
+    font-size: 17px;
+    background-color: #072AC8;
+    color: white;
+    border: none;
+}
+
+.contenedorHero .btn-see {
+    width: 150px;
+    height: 52px;
+    font-size: 17px;
+    border: none;
+    background-color: #E5E5E5;  
+}
+
+.imagenes{
+    position: relative;
+}
+
+.tarjeta-uno {
+    height: 350px;
+    width: auto;
+    position: absolute; 
+    top:10px;
+    left:-50px;  
+}
+
+.tarjeta-dos {
+    height: 300px;
+    width: auto;
+    bottom:-100px;
+    right:0px; 
+    position: absolute;  
+}
+
+.tarjeta-hero {
+    height: 637px;
+    width: 570px;     
+}
+
+/*-- Section 2 / logos---------------------------------------------------*/
+
+section.contenedorlogo > div {
+    display: flex;  
+}
+
+.logos {   
+    justify-content: space-between;
+    display: flex;   
+    filter: grayscale(100%);
+    margin-top: 100px;
+    margin-bottom: 100px;   
+    max-width: 1100px;
+    align-items: center;
+}
+
+/*-- Section 2 / Projects---------------------------------------------------*/
+
+.projects h2 {    
+    font-size: 40px;
+}
+
+.white {
+    background-color: white;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;   
+}
+
+.projects img {
+    height: 220px;
+    width: auto;  
+}
+
+section.projects > div {
+    display: flex;
+}
+
+.projects  {
+    width: 1440px;
+    height: 561px;
+    align-items: center;
+
+}
+.card-projects article {
+    display: flex;
+    flex-direction: column;   
+    width: 340px;
+    height: 240px;
+    justify-content: space-between;    
+    padding-top: 50px;   
+    padding-right: 80px;
+}
+
+.projects button{
+   color: #072AC8;
+   border: none;   
+   background-color: white;
+   font-size: 17px;
+   padding-top: 70px;
+   margin-bottom:30px ;
+   margin-left:30px ;
+}
+
+.projects h3 {
+    font-size: 24px;
+    padding-left: 35px;
+    padding-top: 30px;
+}
+
+.projects p {
+    font-size: 17px;
+    padding-left: 35px;    
+}
+
+/*-- Section 3 / iconos---------------------------------------------------*/
+.section .iconos{
+    width: auto ;
+    height: 622px;
+}
+
+.iconos div{
+    background-color: #292E47;
+    background-image:url("../midterm-project/assets/testimonial-section/orbit.png" ) ;
+    background-repeat: no-repeat;   
+    align-items: center;
+    position: relative;
+}
+
+.iconos h3 {
+    color: #F4F6FC;
+    font-size: 40px;
+    align-items: center;
+}
+
+.iconos p {
+    color: #FFC600;
+}
+
+.iconos img {
+    width: 150px ;
+    height: 150px;
+}
+
+.iconos .cinco {
+    width: 50px; 
+    height: 50px; 
+    overflow: hidden;
+    border-radius: 50%;    
+}
+
+.iconos span{
+    
+}
+
+/*-- Section 4 / services---------------------------------------------------*/
+.services h2 {
+    font-size: 40px;    
+}
+
+.services {
+    display: flex;
+    flex-direction: column; 
+    height: 500px;
+}
+
+.services img {
+    height: 40px;
+    width: 40px;  
+}
+
+section.services > div {
+    display: flex;
+}
+
+.card-services {
+    gap: 40px;
+}
+
+.card-services article {
+    display: flex;
+    flex-direction: column;   
+    width: 340px;
+    height: 380px  ;
+    justify-content: space-between;   
+    background-color: white;   
+}
+
+.services button {
+   color: #072AC8;
+   border: none;   
+   background-color:  #ffffff;
+   font-size: 17px;   
+}
+
+.services h3 {
+    font-size: 24px;   
+}
+
+.services p {
+    font-size: 17px;       
+}
+
+/*-- Section 5 / questions---------------------------------------------------*/
+
+.questions  {
+    width: 1320px;
+    height: 500px  ;
+    background-color:rgba(255, 198, 0, 1);   
+    /*justify-items: center; */       
+}
+
+.questions  h3 {
+   font-size: 40px;          
+}
+
+.questions  p {
+    font-size: 20px;          
+ }
+
+ .questions  input {
+    width: 393px;
+    height: 80px;            
+ }
+
+ .questions .btn-question {
+    width: 198px;
+    height: 80px;
+    font-size: 17px;
+    background-color: #072AC8;
+    color: white;
+    border: none;         
+ }
+
+ /*-- Section 6 / information---------------------------------------------------*/
+
+ .information  {
+    width: 1440px;
+    height: 242px;         
+ }
+
+ .information  ul {
+    display: flex;  
+    justify-content:right;
+    list-style: none;
+    gap: 30px;          
+ }
+
+ .information article svg {
+    padding-left: 50px;          
+ }
+
+ .information p {
+    padding-left: 50px;          
+ }
