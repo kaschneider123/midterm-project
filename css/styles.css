@@ -22,6 +22,11 @@ header {
     justify-content: space-between;     
     padding-top: 70px;
     align-items: center;
+    
+}
+
+.nav-bar :first-child {
+    color: #072AC8;
 }
 
 .nav-bar a {
@@ -33,7 +38,7 @@ header {
 
 .nav-bar{
     gap: 60px;   
-    display: flex; 
+    display: flex;
 }
 
 .btn-primario {
@@ -56,6 +61,8 @@ header {
     display: flex;
     padding: 0 11.80%;
     align-items: center;
+    padding-top: 100px;
+    padding-bottom: 130px;
 }
 
 .imagenes {
@@ -102,84 +109,101 @@ h1 {
 
 /*-- Section 2 / logos---------------------------------------------------*/
 
-section.contenedorlogo > div {
-    display: flex;  
+.contenedor-logo {
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    background-color: #E5E5E5; 
+    margin: 0 auto;
+    padding-left: 170px;
+    padding-right: 170px;
 }
 
-.logos {   
-    justify-content: space-between;
-    display: flex;   
+.img-logos {
+    display: flex;
+    justify-content: space-between;  
+    width: 100%;  
     filter: grayscale(100%);
-    margin-top: 100px;
-    margin-bottom: 100px;   
-    max-width: 1100px;
-    align-items: center;
+}
+
+.img-logos img {
+    max-width: 100%;  
 }
 
 /*-- Section 2 / Projects---------------------------------------------------*/
 
-.projects {
+.contenedor-projects {
     display: flex;
-    flex-direction: column;   
-}
-
-.white {
-    background-color: white;
-}
-
-.projects img {
-    height: 220px;
-    width: auto;  
-}
-
-section.projects > div {
-    display: flex;
-}
-
-.projects  {
+    flex-direction: column;    
     width: 1440px;
     height: 561px;
+    margin: 0 auto;
     align-items: center;
-
+    justify-content:center;
+    gap: 70px;
+    padding-top: 300px;     
 }
-.card-projects article {
+
+.contenedor-projects h3 {
+    color: #292E47;
+    font-size: 40px;    
+}
+
+.cards-projects {
+    display: flex;
+    gap: 40px;    
+}
+
+.white-background {
+    background-color: white;
+    height: 230px;
+    width: 340px;
+    padding-bottom: 30px; 
+}
+
+.contenedor-projects img {
+    height: 240px;
+    width: 340px;  
+}
+
+.card-projects {
     display: flex;
     flex-direction: column;   
     width: 340px;
     height: 240px;
     justify-content: space-between;    
-    padding-top: 50px;   
-    padding-right: 80px;
 }
 
-.projects button {
+.white-background .options  {
+    font-size: 24px;
+    padding-left: 30px;
+    padding-top: 30px;
+    font-weight: 500;
+    color: #292E47;
+}
+
+.white-background p {
+    font-size: 17px;
+    padding-left: 30px;
+    padding-top: 30px;
+    color: #6B708D;
+}
+
+.contenedor-projects button {
     color: #072AC8;
     border: none;   
     background-color: white;
     font-size: 17px;
-    padding-top: 70px;
-    margin-bottom:30px ;
-    margin-left:30px ;
+    padding-top: 70px;    
+    margin-left:30px;
 }
 
-.projects h3 {
-    font-size: 40px;
-    padding-left: 35px;
-    padding-top: 30px;
-}
-
-.projects p {
-    font-size: 17px;
-    padding-left: 35px;       
-}
-
-.projects .options {
-    font-size: 24px;
-}
 
 /*-- Section 3 / stickers---------------------------------------------------*/
 
-.contenedor-reviews{ 
+.contenedor-reviews { 
     background-image:url("../assets/testimonial-section/orbit.png" );  
     background-repeat: no-repeat; 
     background-position: center;   
@@ -193,6 +217,8 @@ section.projects > div {
     justify-content: center;  
     margin: 0 auto;  
     padding: 51px 68px 73px 67px;
+    margin-top: 300px; /* ??????????*/
+    margin-bottom: 200px; /* ??????????*/
 }
 
 .contenedor-reviews > div {
@@ -261,33 +287,27 @@ h3 {
 
 /*-- Section 4 / services---------------------------------------------------*/
 
-.services{
+.contenedor-services{
     display: flex;
-    width: 1320px;
-    height: 622px;
-    align-items: center;
-    justify-content: center;  
+    width: 1440px;
+    height: 561px; 
     margin: 0 auto;  
-    padding: 51px 68px 73px 67px; 
+    justify-content: center;
+    align-items: center;     
 }
 
-
-.services h2 {
-    font-size: 40px;    
+.contenedor-services img {
+    height: 40px;
+    width: 40px;  
 }
 
-.services {
+.contenedor-services {
     display: flex;
     flex-direction: column; 
     height: 500px;
 }
 
-.services img {
-    height: 40px;
-    width: 40px;  
-}
-
-section.services > div {
+section.contenedor-services > div {
     display: flex;
 }
 
@@ -295,28 +315,48 @@ section.services > div {
     gap: 40px;
 }
 
-.card-services article {
+.card-services div {
     display: flex;
     flex-direction: column;   
     width: 340px;
-    height: 380px  ;
-    justify-content: space-between;   
-    background-color: white;   
+    height: 380px;      
+    background-color: white;  
+    
 }
 
-.services button {
+/* .card-services img {
+    background-color: rgba(236, 247, 255, 1);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;    
+} */
+
+
+.contenedor-services h2 {
+    font-size: 40px; 
+    color:rgba(41, 46, 71, 1);
+    font-weight: 600;   
+}
+
+.contenedor-services h3 {
+    font-size: 24px; 
+    color: rgba(41, 46, 71, 1);
+    padding-top: 100px;
+}
+
+.contenedor-services p {
+    font-size: 20px; 
+    padding: 20px 30px 0px 30px ; 
+    color: rgba(107, 112, 141, 1);     
+}
+
+.contenedor-services button {
     color: #072AC8;
     border: none;   
     background-color:  #ffffff;
     font-size: 17px;   
-}
-
-.services h3 {
-    font-size: 24px;   
-}
-
-.services p {
-    font-size: 17px;       
+    padding-top: 50px;
+    
 }
 
 /*-- Section 5 / questions---------------------------------------------------*/
@@ -330,6 +370,7 @@ section.services > div {
     justify-content: center;  
     margin: 0 auto; 
     flex-direction: column;
+    margin-top: 200px;
 }
 
 .contenedor-questions h3 {
@@ -377,7 +418,8 @@ section.services > div {
     font-weight: 500;
     color: white;
     align-items: center;
-    justify-content: center;         
+    justify-content: center;  
+    border: none;       
 }
 
 
