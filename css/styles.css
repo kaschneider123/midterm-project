@@ -153,13 +153,13 @@ section.projects > div {
 }
 
 .projects button {
-   color: #072AC8;
-   border: none;   
-   background-color: white;
-   font-size: 17px;
-   padding-top: 70px;
-   margin-bottom:30px ;
-   margin-left:30px ;
+    color: #072AC8;
+    border: none;   
+    background-color: white;
+    font-size: 17px;
+    padding-top: 70px;
+    margin-bottom:30px ;
+    margin-left:30px ;
 }
 
 .projects h3 {
@@ -174,50 +174,104 @@ section.projects > div {
 }
 
 .projects .options {
-     font-size: 24px;
+    font-size: 24px;
 }
 
-/*-- Section 3 / iconos---------------------------------------------------*/
-.section .iconos{
-    width: auto ;
+/*-- Section 3 / stickers---------------------------------------------------*/
+
+.contenedor-reviews{ 
+    background-image:url("../assets/testimonial-section/orbit.png" );  
+    background-repeat: no-repeat; 
+    background-position: center;   
+    background-color:  #292E47;   
+    background-size: contain;
+    display: flex;
+    max-width: 1320px;
+    width: 100%;
     height: 622px;
-}
-
-.iconos div{
-    background-color: #292E47;
-    background-image:url("../midterm-project/assets/testimonial-section/orbit.png" ) ;
-    background-repeat: no-repeat;   
     align-items: center;
-    position: relative;
+    justify-content: center;  
+    margin: 0 auto;  
+    padding: 51px 68px 73px 67px;
 }
 
-.iconos h3 {
-    color: #F4F6FC;
-    font-size: 40px;
+.contenedor-reviews > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.contenedor-reviews .second-column {
+    justify-content: center;
     align-items: center;
+    gap: 40px;
 }
 
-.iconos p {
+.contenedor-reviews .second-column .profile-reviewed {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.contenedor-reviews > div:last-of-type {
+    align-items: flex-end;
+}
+
+
+/* texto----*/
+h3 {
+    font-size: 37px;
+    font-weight: bold;
+    color: white;
+    text-align: center;     
+}
+
+.second-column p {
     color: #FFC600;
-}
-
-.iconos img {
-    width: 150px ;
-    height: 150px;
-}
-
-.iconos .cinco {
-    width: 50px; 
-    height: 50px; 
-    overflow: hidden;
-    border-radius: 50%;    
-}
-
-.iconos span{
+    font-size: 23px;    
+    text-align: center; 
+    padding-top: 70px;
     
 }
 
+.profile-reviewed .five {
+    width: 50px; 
+    height: 50px; 
+    overflow: hidden;
+    border-radius: 50%;  
+}
+
+.profile-reviewed {
+    padding-top: 105px;
+}
+
+.info-reviews, .span-one {
+    color: #A2D6F9;    
+} 
+
+.info-reviews, .span-two {
+    color: white;     
+}
+
+.contenedor-reviews img{
+    width: 50%;    
+}  
+
+
 /*-- Section 4 / services---------------------------------------------------*/
+
+.services{
+    display: flex;
+    width: 1320px;
+    height: 622px;
+    align-items: center;
+    justify-content: center;  
+    margin: 0 auto;  
+    padding: 51px 68px 73px 67px; 
+}
+
+
 .services h2 {
     font-size: 40px;    
 }
@@ -251,10 +305,10 @@ section.services > div {
 }
 
 .services button {
-   color: #072AC8;
-   border: none;   
-   background-color:  #ffffff;
-   font-size: 17px;   
+    color: #072AC8;
+    border: none;   
+    background-color:  #ffffff;
+    font-size: 17px;   
 }
 
 .services h3 {
@@ -267,53 +321,107 @@ section.services > div {
 
 /*-- Section 5 / questions---------------------------------------------------*/
 
-.questions  {
+.contenedor-questions {
     width: 1320px;
-    height: 500px  ;
-    background-color:rgba(255, 198, 0, 1);   
-    /*justify-items: center; */       
+    height: 500px;
+    background-color:rgba(255, 198, 0, 1);    
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    margin: 0 auto; 
+    flex-direction: column;
 }
 
-.questions  h3 {
-   font-size: 40px;          
+.contenedor-questions h3 {
+    color: #292E47;
+    font-size: 40px;    
+    padding-bottom: 20px;
 }
 
-.questions  p {
-    font-size: 20px;          
- }
+.contenedor-questions p {
+    font-size: 20px;
+    color: #292E47;
+    text-align: center;  
+    padding-bottom: 50px;  
+}
+.contenedor-questions .input{
+    display: flex;    
+}
 
- .questions  input {
+.contenedor-questions .input .input-email {
     width: 393px;
-    height: 80px;            
- }
+    height:80px ;
+    padding-left:10px;  
+    gap: 20px;  
+    color: #292E47;
+    font-size: 17px;
+    background-image:url("../assets/testimonial-section/orbit.png" );  
+    background-repeat: no-repeat; 
+    background-position: center;   
+    background-size: 12px;
+    border: none;
+}
 
- .questions .btn-question {
+.input-btn{
+    padding-left: 20px;
+    
+}
+
+.input-btn .btn-question{
+    display: flex;
+    text-decoration: none;
     width: 198px;
     height: 80px;
     font-size: 17px;
     background-color: #072AC8;
+    font-weight: 500;
     color: white;
-    border: none;         
- }
+    align-items: center;
+    justify-content: center;         
+}
 
- /*-- Section 6 / information---------------------------------------------------*/
 
- .information  {
-    width: 1440px;
-    height: 242px;         
- }
+/*-- Section 6 / information---------------------------------------------------*/
 
- .information  ul {
-    display: flex;  
-    justify-content:right;
-    list-style: none;
-    gap: 30px;          
- }
+.information  {
+    background-color: #E5E5E5;
+    width: 1320px;
+    height: 242px;  
+    display: flex; 
+    margin: 0 auto;   
+    padding: 0 5%;
+    justify-content: space-between;     
+    padding-top: 170px;
+    align-items: center;    
+}
 
- .information article svg {
-    padding-left: 50px;          
- }
+.direction {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
- .information p {
-    padding-left: 50px;          
- }
+.direction{
+    color: #6B708D;
+    font-size: 17px;
+}
+
+.items {
+    display: flex;   
+    flex-direction: column; 
+    text-decoration: none;   
+}
+
+.items a{
+    text-decoration: none;
+    color: #6B708D;
+    font-size: 17px;
+    padding-left: 100px;
+    
+}
+
+.items-firts-line , .items-second-line{
+    padding: 20px;
+    
+}
+
