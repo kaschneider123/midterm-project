@@ -143,6 +143,54 @@ h1 {
 }
 
 /*-- Section 2 / Projects ----------------------------------------------------------*/
+.cards-projects {
+    display: flex;  
+    flex-direction: row; 
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px; 
+    padding-right: 30px;  
+}
+
+.cards-projects img {
+    width: 50px; 
+    height: 50px; 
+    overflow: hidden;
+    border-radius: 50%; 
+}
+
+.cards-projects {
+    display: flex;
+    flex-direction: row;
+}
+
+.title h2 {
+    margin-left: 15px;
+    margin-top: 40px;    
+    margin-bottom: 20px;      
+    font-size: 30px; 
+    color:rgba(41, 46, 71, 1);
+    font-weight: 600;  
+    margin-left: 15px; 
+}
+
+.contenedor-projects p {
+    font-size: 17px;    
+}
+
+.cards-projects h3 {
+    padding: 10px 10px;
+    font-size: 19px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    color: #292E47;
+    justify-self: flex-start;      
+}
+
+
 
 /*-- Section 3 / stickers ----------------------------------------------------------*/
 
@@ -150,6 +198,7 @@ h1 {
     background-color: #292E47;      
     display: flex;
     flex-direction: column;
+    margin-top: 25px;
 }
 
 .profile-reviewed{
@@ -164,7 +213,7 @@ h1 {
     border-radius: 50%;      
 }
 
- h3 {
+.second-column h3 {
     font-size: 28px;
     font-weight: bold;
     color: white;
@@ -206,33 +255,114 @@ padding-left: 10px;
 
 
 /*-- Section 4 / services ---------------------------------------------------*/
+.contenedor-services img { 
+    border-radius: 50%;
+    background-color: rgba(236, 247, 255, 1);
+    width: 60px;
+    height: 60px;
+    object-fit: scale-down;
+    border-radius: 50%;  
+    display: flex;   
+}
+
+.card-one, .card-two , .card-three {
+    display: flex;      
+    align-items: start;
+    justify-content: start;
+    padding: 5px;   
+    padding-top: 20px;   
+ 
+}
+
+.contenedor-services article {
+    background-color: white;
+    margin: 15px;
+
+}
+
+.contenedor-services h2 {
+    margin-top: 25px;    
+    margin-bottom: 25px;
+    font-size: 30px; 
+    color:rgba(41, 46, 71, 1);
+    font-weight: 600;  
+    margin-left: 15px;
+}
+
+.contenedor-services {
+    display: flex;    
+    padding-top: 40px;
+    padding-bottom: 40px; 
+    justify-content: center;
+
+}
+
+.contenedor-services p {
+    font-size: 18px;    
+    margin: 15px;
+}
+
+
+.all-cards h3 {  
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    color: #292E47; 
+    padding: 0; 
+    padding-left: 15px;       
+}
+
+.cards {
+    display: flex;
+    flex-direction: column; 
+}
+
+.cards a {
+    font-size: 17px;
+    margin: 15px;
+    text-decoration: none;    
+}
 
 /*-- Section 5 / questions---------------------------------------------------*/   
 .contenedor-questions {
-    background-color:rgba(255, 198, 0, 1);
-    gap: 20px;
+    background-color:rgba(255, 198, 0, 1);   
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    gap: 35px;   
+}
+
+.input {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 15px;
+    gap: 35px;
 }
 
-.contenedor-questions h3 {
+.text h3 {
+    padding: 10px 10px;
+    font-weight: 600;
     color: #292E47;
-    font-size: 28px;    
+    font-size: 30px;    
+    text-align: center; 
+    padding-bottom: 25px; 
 }
 
-.contenedor-questions p {
+.text p {
     font-size: 20px;
+    font-weight: 400;
     color: #292E47;
-    text-align: center;    
+    text-align: center; 
+    padding-bottom: 25px;    
 }
 
 .input .input-email {
     width: 320px;
     height:52px ;
     padding-left:10px ;
+    border: none;
 }
 
 .btn-question{
@@ -258,9 +388,10 @@ padding-left: 10px;
     align-items: center;
     padding-bottom: 15px; 
     padding-top: 20px; 
+
 }
 
-.direction{
+.direction {
     color: #6B708D;
     font-size: 13px;
     text-align: center;

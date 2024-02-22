@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: "roboto","nunito sans","Helvetica", "sans-serif"; 
+}
+
+h1,h2,h3,h4{
+    font-weight:400;
+}
+
+/*--header--------------------------------------------------------------------------------*/
+
+header {
+    display: flex;
+    padding: 0 11.80%;
+    justify-content: space-between;     
+    padding-top: 70px;
+    align-items: center;
+    
+}
+
+
+.nav-bar a {
+    font-size: 17px;
+    color: rgba(107, 112, 141, 1);
+    font-weight: 500;
+    text-decoration: none;    
+} 
+
+.nav-bar{
+    gap: 60px;   
+    display: flex;
+    
+}
+
+.btn-primario {
+    display: flex;
+    text-decoration: none;
+    width: 150px;
+    height: 52px;
+    font-size: 17px;
+    background-color: #072AC8;
+    font-weight: 500;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    text-decoration: none;
+}
+/*-- Section 1 / Formulario----------------------------------------------------*/
+.contenedor-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 11.80%;
+    margin-top: 146px;    
+      
+}
+
+.contenedor-form ::placeholder { 
+    padding-left: 15px;   
+    font-size: 20px;    
+    font-family: roboto;    
+    align-content: center;
+}
+
+.contenedor-form label {
+    font-size: 20px;
+    color: #6B708D;
+}
+
+.contenedor-form h2 {
+    font-size: 60px;
+    font-weight: 500;
+    color: #292E47;
+    margin-bottom: 80px;
+}
+
+.form-name {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 1100px;
+    height: 70px;   
+    border: none;
+    background-color:rgba(107, 112, 141, 0.1);    
+}
+
+.form-email {   
+    margin-top: 10px;
+    margin-bottom: 40px; 
+    width: 530px;
+    height: 70px;
+    border: none;    
+    background-color:rgba(107, 112, 141, 0.1);  
+} 
+
+.form-number {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 530px;
+    height: 70px;
+    border: none;    
+    background-color:rgba(107, 112, 141, 0.1);    
+}
+
+.email-phone {    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 530px;
+    height: 70px;
+    gap: 40px;    
+    margin-bottom: 40px;
+}
+
+.message {
+    margin-top: 50px;
+}
+
+.form-text-area {
+    width: 1100px;
+    height: 200px;
+    border: none; 
+    margin-top: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;    
+    background-color:rgba(107, 112, 141, 0.1);    
+}
+
+.message  textarea {
+    padding-top: 22px;
+}
+
+.btn-form{
+    display: flex;
+    text-decoration: none;
+    width: 1100px;
+    height: 80px;
+    font-size: 17px;
+    background-color: #072AC8;
+    font-weight: 500;
+    color: white;
+    align-items: center;
+    justify-content: center;  
+    border: none;  
+    margin-bottom:140px ;
+    margin-top: 40px;
+}
+
+
+/*-- Section 2 / information---------------------------------------------------*/
+
+.information  {
+    background-color: #E5E5E5;
+    width: 1320px;
+    height: 242px;  
+    display: flex; 
+    margin: 0 auto;   
+    padding: 0 5%;
+    justify-content: space-between;     
+    align-items: center;    
+}
+
+.direction {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.direction{
+    color: #6B708D;
+    font-size: 17px;
+}
+
+.items {
+    display: flex;   
+    flex-direction: column; 
+    text-decoration: none;   
+}
+
+.items a{
+    text-decoration: none;
+    color: #6B708D;
+    font-size: 17px;
+    padding-left: 100px;
+    
+}
+
+.items-firts-line , .items-second-line{
+    padding: 20px;
+    
+}

@@ -8,7 +8,7 @@
 
 body {
     background-color: #E5E5E5;
-    font-family: "roboto","nunito sans","Helvetica", "sans-serif";  
+    font-family: "roboto","nunito sans","Helvetica", "sans-serif"; 
 }
 
 h1,h2,h3,h4{
@@ -39,6 +39,7 @@ header {
 .nav-bar{
     gap: 60px;   
     display: flex;
+    
 }
 
 .btn-primario {
@@ -53,6 +54,7 @@ header {
     align-items: center;
     justify-content: center;
     border: none;
+    text-decoration: none;
 }
 
 /*--Section 1 / hero -------------------------------------------------------------------*/
@@ -93,17 +95,15 @@ h1 {
 
 .btn-hero {
     display: flex;
-    gap: 40px;   
+    gap: 40px;  
+    align-items: center; 
 }
 
 .btn-secundario {
-    width: 150px;
-    height: 52px;
     font-size: 17px;
-    border: none;
-    background-color: #E5E5E5; 
     font-weight: 600;
     color:  #6B708D;
+    text-decoration: none;
 }
 
 
@@ -132,76 +132,78 @@ h1 {
     max-width: 100%;  
 }
 
-/*-- Section 2 / Projects---------------------------------------------------*/
+/*-- Section 3 / Projects---------------------------------------------------*/
 
 .contenedor-projects {
     display: flex;
     flex-direction: column;    
-    width: 1440px;
-    height: 561px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content:center;
-    gap: 70px;
-    padding-top: 300px;     
+    padding: 200px 11.80%;
+    align-items:flex-start;
+    align-content: center;    
 }
 
 .contenedor-projects h3 {
     color: #292E47;
-    font-size: 40px;    
+    font-size: 40px;
+    padding-bottom: 70px;
+    line-height: 46.88px;    
+    font-weight: 500; 
 }
+
 
 .cards-projects {
     display: flex;
-    gap: 40px;    
+    width: 100%;
+    justify-content: space-between;     
 }
 
-.white-background {
-    background-color: white;
-    height: 230px;
+.card{
+    display: flex;
+    flex-direction: column;
     width: 340px;
-    padding-bottom: 30px; 
+    height: 444px;
+    box-shadow: 10px 10px 64px -16px rgba(0,0,0,0.44);
 }
 
-.contenedor-projects img {
+.card img {
     height: 240px;
     width: 340px;  
 }
 
-.card-projects {
-    display: flex;
-    flex-direction: column;   
+.white-background {
+    background-color: white;
+    padding-left: 30px;
+    height: 204px;
     width: 340px;
-    height: 240px;
-    justify-content: space-between;    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
 }
 
-.white-background .options  {
+
+.white-background h4  {
     font-size: 24px;
-    padding-left: 30px;
-    padding-top: 30px;
     font-weight: 500;
     color: #292E47;
 }
 
 .white-background p {
     font-size: 17px;
-    padding-left: 30px;
-    padding-top: 30px;
     color: #6B708D;
+    position: relative;
+    bottom: 20px;
 }
 
-.contenedor-projects button {
+.white-background a {
     color: #072AC8;
-    border: none;   
-    background-color: white;
+    text-decoration: none;   
     font-size: 17px;
-    padding-top: 70px;    
-    margin-left:30px;
+    background-color: transparent;    
 }
 
 
-/*-- Section 3 / stickers---------------------------------------------------*/
+/*-- Section 4 / stickers---------------------------------------------------*/
 
 .contenedor-reviews { 
     background-image:url("../assets/testimonial-section/orbit.png" );  
@@ -211,14 +213,10 @@ h1 {
     background-size: contain;
     display: flex;
     max-width: 1320px;
-    width: 100%;
     height: 622px;
-    align-items: center;
     justify-content: center;  
-    margin: 0 auto;  
     padding: 51px 68px 73px 67px;
-    margin-top: 300px; /* ??????????*/
-    margin-bottom: 200px; /* ??????????*/
+    margin: 0 auto 200px auto;
 }
 
 .contenedor-reviews > div {
@@ -285,15 +283,18 @@ h3 {
 }  
 
 
-/*-- Section 4 / services---------------------------------------------------*/
+/*-- Section 5 / services---------------------------------------------------*/
 
 .contenedor-services{
     display: flex;
-    width: 1440px;
-    height: 561px; 
-    margin: 0 auto;  
-    justify-content: center;
-    align-items: center;     
+    flex-direction: column;    
+    padding: 0 11.80%;
+    align-items:flex-start;
+    align-content: center;     
+}
+
+.contenedor-services h2{
+    padding-bottom: 70px;    
 }
 
 .contenedor-services img {
@@ -301,35 +302,31 @@ h3 {
     width: 40px;  
 }
 
-.contenedor-services {
-    display: flex;
-    flex-direction: column; 
-    height: 500px;
-}
-
-section.contenedor-services > div {
-    display: flex;
-}
-
 .card-services {
-    gap: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;  
 }
 
-.card-services div {
+.card-services img {
+    background-color: rgba(236, 247, 255, 1);
+    width: 80px;
+    height: 80px;
+    object-fit: scale-down;
+    border-radius: 50%;    
+}
+
+.card-individual {
     display: flex;
     flex-direction: column;   
     width: 340px;
     height: 380px;      
-    background-color: white;  
-    
-}
+    background-color: white;
+    padding: 0px 30px;  
+    justify-content: space-evenly;
+    box-shadow: 10px 10px 64px -16px rgba(0,0,0,0.44);
 
-/* .card-services img {
-    background-color: rgba(236, 247, 255, 1);
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;    
-} */
+}
 
 
 .contenedor-services h2 {
@@ -341,25 +338,26 @@ section.contenedor-services > div {
 .contenedor-services h3 {
     font-size: 24px; 
     color: rgba(41, 46, 71, 1);
-    padding-top: 100px;
+    text-align: left;
+   
 }
 
 .contenedor-services p {
     font-size: 20px; 
-    padding: 20px 30px 0px 30px ; 
+    position: relative;
+    bottom: 20px;
     color: rgba(107, 112, 141, 1);     
 }
 
-.contenedor-services button {
+.contenedor-services a {
     color: #072AC8;
-    border: none;   
-    background-color:  #ffffff;
-    font-size: 17px;   
-    padding-top: 50px;
+    text-decoration: none;   
+    font-size: 17px;
+    background-color: transparent;  
     
 }
 
-/*-- Section 5 / questions---------------------------------------------------*/
+/*-- Section 6 / questions---------------------------------------------------*/
 
 .contenedor-questions {
     width: 1320px;
@@ -423,7 +421,7 @@ section.contenedor-services > div {
 }
 
 
-/*-- Section 6 / information---------------------------------------------------*/
+/*-- Section 7 / information---------------------------------------------------*/
 
 .information  {
     background-color: #E5E5E5;
