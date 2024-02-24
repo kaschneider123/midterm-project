@@ -23,7 +23,14 @@ header {
     justify-content: space-between;     
     padding-top: 70px;
     align-items: center;
-    
+
+    position: fixed;
+    top: 0;
+    right: 100px;
+    left: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #E5E5E5;     
 }
 
 
@@ -59,7 +66,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 0 11.80%;
-    margin-top: 146px;    
+    margin-top: 246px;    
       
 }
 
@@ -82,18 +89,22 @@ header {
     margin-bottom: 80px;
 }
 
+.div-name {
+    padding-bottom: 40px;
+}
 .form-name {
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     width: 1100px;
     height: 70px;   
     border: none;
-    background-color:rgba(107, 112, 141, 0.1);    
+    background-color:rgba(107, 112, 141, 0.1); 
+      
 }
 
 .form-email {   
-    margin-top: 10px;
-    margin-bottom: 40px; 
+    padding-top: 10px;
+    margin-bottom: 50px; 
     width: 530px;
     height: 70px;
     border: none;    
@@ -101,8 +112,7 @@ header {
 } 
 
 .form-number {
-    margin-top: 10px;
-    margin-bottom: 40px;
+    
     width: 530px;
     height: 70px;
     border: none;    
@@ -116,11 +126,11 @@ header {
     width: 530px;
     height: 70px;
     gap: 40px;    
-    margin-bottom: 40px;
+    padding-bottom: 50px;
 }
 
 .message {
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .form-text-area {

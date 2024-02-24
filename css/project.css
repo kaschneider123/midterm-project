@@ -12,9 +12,9 @@ body {
     font-family: "roboto","nunito sans","Helvetica", "sans-serif"; 
 }
 
-h1,h2,h3,h4{
+/* h1,h2,h3,h4{
     font-weight:400;
-}
+} */
 
 /*--header--------------------------------------------------------------------------------*/
 
@@ -24,6 +24,15 @@ header {
     justify-content: space-between;     
     padding-top: 70px;
     align-items: center;
+
+    position: fixed;
+    top: 0;
+    right: 100px;
+    left: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #E5E5E5; 
+    
 }
 
 .nav-bar a {
@@ -35,8 +44,7 @@ header {
 
 .nav-bar{
     gap: 60px;   
-    display: flex;
-    
+    display: flex;    
 }
 
 .btn-primario {
@@ -62,6 +70,7 @@ header {
     padding: 0 11.80%;
     justify-content:flex-start;
     align-content: center;
+    padding-top: 120px;
 }
 
 .title-simplify {
@@ -77,10 +86,11 @@ header {
     padding-bottom: 20px;
 }
 
-.sub-title{
+.sub-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 1100px;
 }
 
 .card-simplify p {
@@ -97,7 +107,7 @@ header {
     width: 100%;
     max-width: 1100px;
     height: 544px;
-    box-shadow: 10px 10px 64px -16px rgba(0,0,0,0.44);
+    box-shadow: 50px 50px 64px -40px rgba(169, 60, 231, 0.5);
 }
 
 /*-- Section 2 / Other Projects---------------------------------------------------*/
@@ -124,7 +134,7 @@ header {
     justify-content: space-between;     
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     width: 340px;
@@ -177,7 +187,8 @@ header {
     align-items: center;
     justify-content: center;  
     margin: 0 auto; 
-    flex-direction: column;    
+    flex-direction: column;
+    margin-top: 100px;
 }
 
 .contenedor-questions h3 {
@@ -192,22 +203,32 @@ header {
     text-align: center;  
     padding-bottom: 50px;  
 }
+
 .contenedor-questions .input{
     display: flex;    
 }
 
 .contenedor-questions .input .input-email {
+    display: flex;
+    justify-content: center;
     width: 393px;
     height:80px ;
-    padding-left:10px;  
+    padding-left: 70px;  
     gap: 20px;  
     color: #292E47;
     font-size: 17px;
-    background-image:url("../assets/testimonial-section/orbit.png" );  
+    border: none; 
+}
+
+.input-email {
+    background-image: url(../assets/newsletter/icon/mail.svg);
     background-repeat: no-repeat; 
-    background-position: center;   
-    background-size: 12px;
-    border: none;
+    background-size: 40px;
+    align-items:flex-start;    
+}
+
+.input {
+    position: relative;
 }
 
 .input-btn{

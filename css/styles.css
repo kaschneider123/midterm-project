@@ -22,6 +22,14 @@ header {
     justify-content: space-between;     
     padding-top: 70px;
     align-items: center;
+
+    position: fixed;
+    top: 0;
+    right: 100px;
+    left: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #E5E5E5;    
     
 }
 
@@ -63,12 +71,29 @@ header {
     display: flex;
     padding: 0 11.80%;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 200px;
     padding-bottom: 130px;
+}
+
+.imagenes .tarjeta-uno {
+    width: 390px;
+    height: auto;
+    position: absolute;
+    top: -10px;
+    left: -110px;
+}
+
+.imagenes .tarjeta-dos {
+    width: 370px;
+    height: auto;
+    position: absolute;    
+    right: -120px;
+    top: 400px;
 }
 
 .imagenes {
     flex: 1;
+    position: relative;
 }
 
 .tarjeta-hero{
@@ -212,7 +237,7 @@ h1 {
     background-color:  #292E47;   
     background-size: contain;
     display: flex;
-    max-width: 1320px;
+    max-width: 1319px;
     height: 622px;
     justify-content: center;  
     padding: 51px 68px 73px 67px;
@@ -360,7 +385,7 @@ h3 {
 /*-- Section 6 / questions---------------------------------------------------*/
 
 .contenedor-questions {
-    width: 1320px;
+    width: 1319px;
     height: 500px;
     background-color:rgba(255, 198, 0, 1);    
     display: flex;
@@ -404,14 +429,15 @@ h3 {
     background-image: url(../assets/newsletter/icon/mail.svg);
     background-repeat: no-repeat; 
     background-size: 40px;
-    align-items:flex-start;
-   
+    align-items:flex-start;    
+}
 
+.input {
+    position: relative;
 }
 
 .input-btn{
-    padding-left: 20px;
-    
+    padding-left: 20px;    
 }
 
 .input-btn .btn-question{
