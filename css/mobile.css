@@ -20,10 +20,14 @@ h1,h2,h3,h4{
 /*--header--------------------------------------------------------------------------------*/
 
 header {
+    padding: 0 11.80%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 64px;
+    align-items: center; 
+    height: 64px;  
+    max-width: 1440px;
+    width: 100%;  
+    margin: 0 auto;
 }
 
 header .btn-mobile {
@@ -48,11 +52,11 @@ header .btn-mobile {
     justify-content: right;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
 
-/* .mobile-open{
+.mobile-open{
     width: 50vw;
     height: 100vh;
     background-color: #E5E5E5;
@@ -62,14 +66,26 @@ header .btn-mobile {
     padding-top: 100px ;
     padding-left: 25px;
     padding-right: 20px;
-} */
+}
 
 .mobile-open  a {
     color: rgba(73, 69, 79, 1);
     text-decoration: none;   
     border-bottom: 1px solid  rgba(83, 83, 83, 0.5);
     padding-bottom: 5px;
+    font-weight: 500;
 }
+
+.nav-bar a {
+    transition: background-color 0.3s ease;
+}
+nav a:hover {
+    color:#072AC8;
+}
+nav a:active {
+    color: #072AC8;
+}
+
 
 .btn-primario {
     display: flex;
@@ -85,7 +101,7 @@ header .btn-mobile {
     border: none;
 }
 
-.nav-bar , .btn-contact{
+.nav-bar , .btn-contact {
     display: none;
 }
 
@@ -103,7 +119,7 @@ header .btn-mobile {
 
 }
 
-.tarjeta-hero{
+.tarjeta-hero {
     width: 61%;
 
 }
@@ -144,20 +160,29 @@ h1 {
 /*-- Section 2 / Projects ----------------------------------------------------------*/
 .cards-projects {
     display: flex;  
-    flex-direction: row; 
-    justify-content: space-evenly;
+    flex-direction: row;     
     align-items: center;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px; 
-    padding-right: 30px;  
+    text-align: center;      
+    gap: 25px;    
 }
 
 .cards-projects img {
     width: 50px; 
     height: 50px; 
     overflow: hidden;
-    border-radius: 50%; 
+    border-radius: 50%;    
+}
+
+.cards-projects {
+    overflow-x: scroll;
+    width: 100%;
+    padding: 10px;  
+    gap: 10px;    
+}
+
+.card-hijo { 
+    flex-shrink: 0;
+    width: 180px;
 }
 
 .cards-projects {
@@ -193,14 +218,14 @@ h1 {
 
 /*-- Section 3 / stickers ----------------------------------------------------------*/
 
-.second-column {
+.second-column-web {
     background-color: #292E47;      
     display: flex;
     flex-direction: column;
     margin-top: 25px;
 }
 
-.profile-reviewed{
+.profile-reviewed-web {
     display: flex;
     flex-direction: column;
 }
@@ -212,7 +237,7 @@ h1 {
     border-radius: 50%;      
 }
 
-.second-column h3 {
+.second-column-web h3 {
     font-size: 28px;
     font-weight: bold;
     color: white;
@@ -220,35 +245,34 @@ h1 {
     padding: 16px 52px 0px 52px;
 }
 
-.second-column p {
+.second-column-web p {
     color: #FFC600;
     font-size: 18px;
     padding: 25px 46px 0 46px;
     text-align: center; 
 }
 
-.second-column .profile-reviewed  {
+.second-column-web .profile-reviewed-web {
     flex-direction: row;
     justify-content: center;
     align-items: center;    
 }
 
-.info-reviews, .span-one {
+.info-reviews-web, .span-one {
     color: #A2D6F9; 
     
 }
 
-.info-reviews, .span-two {
+.info-reviews-web, .span-two {
     color: white; 
-    
 }
 
-.profile-reviewed {
-   padding-top:45px  ;
-   padding-bottom: 13px;   
+.profile-reviewed-web {
+    padding-top:45px;
+    padding-bottom: 13px;   
 }
 
-.info-reviews span{
+.info-reviews-web span{
 padding-left: 10px;
 }
 
@@ -270,13 +294,11 @@ padding-left: 10px;
     justify-content: start;
     padding: 5px;   
     padding-top: 20px;   
- 
 }
 
 .contenedor-services article {
     background-color: white;
     margin: 15px;
-
 }
 
 .contenedor-services h2 {
@@ -289,11 +311,11 @@ padding-left: 10px;
 }
 
 .contenedor-services {
-    display: flex;    
+    display: flex;   
+    flex-direction: column;
     padding-top: 40px;
     padding-bottom: 40px; 
     justify-content: center;
-
 }
 
 .contenedor-services p {
@@ -302,7 +324,7 @@ padding-left: 10px;
 }
 
 
-.all-cards h3 {  
+.contenedor-services h2 {  
     font-size: 22px;
     font-weight: 600;
     display: flex;
@@ -317,7 +339,7 @@ padding-left: 10px;
     flex-direction: column; 
 }
 
-.cards a {
+.card-individual a {
     font-size: 17px;
     margin: 15px;
     text-decoration: none;    
@@ -327,7 +349,7 @@ padding-left: 10px;
 .contenedor-form {
     display: flex;
     flex-direction: column;  
-    padding-left: 15px;
+    padding-left: 18px;
     padding-bottom: 15px;
 }
 
@@ -456,16 +478,23 @@ padding-left: 10px;
     padding-left: 70px;
 }
 
-.input-email {
-    background-image: url(../assets/newsletter/icon/mail.svg);
-    background-repeat: no-repeat; 
-    background-position: start;    
+.input-email {          
     background-size: 25px;  
     color: rgba(41, 46, 71, 1);
     width: 10px;
     height: 10px;
-    padding-left: 15px;
-    
+    padding-left: 15px;        
+}
+
+.input img {    
+    position: absolute;
+    padding-left: 20px;     
+}
+
+.icono {
+    position: relative;
+    display: flex;
+    align-items: center;    
 }
 
 .btn-question{
@@ -484,7 +513,7 @@ padding-left: 10px;
 
 /*-- Section  / information-------------------------------------------------*/
 
-.information  {
+.information-mobile  {
     background-color: #E5E5E5;   
     display: flex;
     justify-content: center;
@@ -493,7 +522,7 @@ padding-left: 10px;
     padding-top: 20px; 
 }
 
-.direction {
+.direction-mobile {
     color: #6B708D;
     font-size: 13px;
     text-align: center;
@@ -505,7 +534,7 @@ padding-left: 10px;
     display: flex;
     flex-direction: column;  
     padding-left: 15px;
-    padding-bottom: 15px;    
+    padding-bottom: 15px;  
 }
 
 .card-simplify img {      
@@ -519,7 +548,7 @@ padding-left: 10px;
 
 .title-simplify h2 {
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 600;
     padding-bottom: 20px;
 }
 
@@ -531,8 +560,9 @@ padding-left: 10px;
 .white-parrafo {
     background-color: white;
     width: 350px;   
-    padding-left: 10px;
-    padding-right: 10px; 
+    height: 380px;
+    padding: 10px;     
+    overflow-y: scroll;
 }
 
 .white-parrafo p {    
@@ -582,7 +612,23 @@ padding-left: 10px;
 }
 
 
-/*-- Medias Query ------------------------------------------------------------*/
+/*-- Medias Query web ------------------------------------------------------------*/
+
+.contenedor-logo {
+    display: none;
+}
+
+.contenedor-projects-web {
+    display: none;
+}
+
+.one, .two, .three, .four {
+    display: none;
+}
+
+.information-web {
+    display: none;
+}
 
 @media screen and (min-width: 1000px){
     .btn-mobile {
@@ -594,6 +640,16 @@ padding-left: 10px;
         justify-content: space-between;     
         padding-top: 70px;
         align-items: center;
+
+       /*  position: fixed;
+        top: 0;
+        right: 100px;
+        left: 100px;
+        padding-left: 100px;
+        padding-right: 100px;
+        background-color: #E5E5E5;    
+        z-index: 50; */   
+
     }
     .nav-bar a {
         font-size: 17px;
@@ -601,6 +657,16 @@ padding-left: 10px;
         font-weight: 500;
         text-decoration: none;    
     } 
+
+    .nav-bar a {
+        transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+        color:#072AC8;
+    }
+    nav a:active {
+        color: #072AC8;
+    }
     
     .nav-bar{
         gap: 60px;   
@@ -622,6 +688,7 @@ padding-left: 10px;
         flex: 1;
     }
     
+
     .tarjeta-hero{
         width: 100%;
     }
@@ -660,32 +727,460 @@ padding-left: 10px;
         color:  #6B708D;
     }
 
+    .tarjeta-hero{
+        width: 100%;
+    }
+    
+    .hero {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: 40px;
+    }
 
     .desktop-hidden {
         display: none;
     }
 
-    .img-desktop {
-        display: flex;
-        flex: 1;
-        justify-content: flex-end;
+    .img-desktop {        
+        flex: 1;               
+        position: relative; 
+        display: block;        
     }  
-    
-    /*-- Hero---------------------------------------------------*/
-    .imagenes .tarjeta-uno {
-        display: none; 
-    }
-    /*-- logos---------------------------------------------------*/
 
-    .contenedor-logo {
-        display: none; 
+    .img-desktop .tarjeta-uno {
+        width: 390px;
+        height: auto;
+        position: absolute;
+        top: -10px;
+        left: -110px;
     }
     
+    .img-desktop .tarjeta-dos {
+        width: 370px;
+        height: auto;
+        position: absolute;    
+        right: -120px;
+        top: 400px;
+    }
+    
+    .contenedor-hero {
+        display: flex;
+        padding: 0 11.80%;
+        align-items: center;
+        padding-top: 200px;
+        padding-bottom: 130px;
+    }
+    
+.hero {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 40px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #292E47;
+    text-align: left;
+}
+
+.parrafo {
+    color: #6B708D;
+    font-size: 20px;
+    text-align: left;
+}   
+    
+
+/* logos ------------------------------------*/
+.contenedor-logo {
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    background-color: #E5E5E5; 
+    margin: 0 auto;
+    padding-left: 170px;
+    padding-right: 170px;
+}
+
+.img-logos {
+    display: flex;
+    justify-content: space-between;  
+    width: 100%;  
+    filter: grayscale(100%);
+}
+
+.img-logos img {
+    max-width: 100%;  
 }
 
 
-@media screen and (min-width: 1400px){
-    .tarjeta-hero-desktop {
-        width: 469px;
-    }
+/* projects web ------------------------------------*/
+
+.contenedor-projects-web {
+    display: flex;
+    flex-direction: column;    
+    padding: 200px 11.80%;
+    align-items:flex-start;
+    align-content: center;    
 }
+
+.contenedor-projects-web h3 {
+    color: #292E47;
+    font-size: 40px;
+    padding-bottom: 70px;
+    line-height: 46.88px;    
+    font-weight: 600; 
+}
+
+.cards-projects-web {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;     
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 444px;
+    box-shadow: 10px 10px 64px -16px rgba(0,0,0,0.44);
+}
+
+.card img {
+    height: 240px;
+    width: 340px;  
+}
+
+.white-background {
+    background-color: white;
+    padding-left: 30px;
+    height: 204px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.white-background h4 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #292E47;
+}
+
+.white-background p {
+    font-size: 17px;
+    color: #6B708D;
+    position: relative;
+    bottom: 20px;
+}
+
+.white-background a {
+    color: #072AC8;
+    text-decoration: none;   
+    font-size: 17px;
+    background-color: transparent;    
+}
+
+.contenedor-projects {
+    display: none;
+}
+
+
+/* iconos web------------------------------------*/
+
+.contenedor-reviews-web { 
+    background-image:url("../assets/testimonial-section/orbit.png" );  
+    background-repeat: no-repeat; 
+    background-position: center;   
+    background-color:  #292E47;   
+    background-size: contain;
+    display: flex;
+    max-width: 1319px;
+    height: 622px;
+    justify-content: center;  
+    padding: 51px 68px 73px 67px;
+    margin: 0 auto 200px auto;
+}
+
+.contenedor-reviews-web > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.contenedor-reviews-web .second-column-web {
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.one, .two , .three ,.four {
+    display: inline-block;
+}
+
+.contenedor-reviews-web .second-column-web .profile-reviewed-web {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.contenedor-reviews-web > div:last-of-type {
+    align-items: flex-end;
+}
+
+.contenedor-reviews-web h3 {
+    font-size: 37px;
+    font-weight: bold;
+    color: white;
+    text-align: center;     
+}
+
+.second-column-web p {
+    color: #FFC600;
+    font-size: 23px;    
+    text-align: center; 
+    padding-top: 70px;    
+}
+
+.profile-reviewed-web .five {
+    width: 50px; 
+    height: 50px; 
+    overflow: hidden;
+    border-radius: 50%;  
+}
+
+.profile-reviewed-web {
+    padding-top: 105px;
+}
+
+.info-reviews-web, .span-one {
+    color: #A2D6F9;    
+} 
+
+.info-reviews-web, .span-two {
+    color: white;     
+}
+
+.contenedor-reviews-web img {
+    width: 50%;    
+}  
+
+/* services-------------------*/
+
+.contenedor-services {
+    display: flex;
+    flex-direction: column;    
+    padding: 0 11.80%;
+    align-items:flex-start;
+    align-content: center;    
+    padding-bottom: 100px; 
+}
+
+/*--*/
+
+.card-services {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;  
+}
+
+.card-services img {
+    background-color: rgba(236, 247, 255, 1);
+    width: 80px;
+    height: 80px;
+    object-fit: scale-down;
+    border-radius: 50%;    
+}
+
+.contenedor-services h2 {
+    font-size: 40px; 
+    color:rgba(41, 46, 71, 1);
+    font-weight: 600;   
+}
+
+.contenedor-services img {
+    height: 40px;
+    width: 40px;  
+}
+
+.card-services img {
+    background-color: rgba(236, 247, 255, 1);
+    width: 80px;
+    height: 80px;
+    object-fit: scale-down;
+    border-radius: 50%;    
+}
+
+.contenedor-services h3 {
+    font-size: 24px; 
+    color: rgba(41, 46, 71, 1);       
+    font-weight: 500;
+    padding-top: 30px;
+}
+
+.contenedor-services p {
+    font-size: 20px; 
+    position: relative;    
+    color: rgba(107, 112, 141, 1);     
+}
+
+.contenedor-services a {
+    color: #072AC8;
+    text-decoration: none;   
+    font-size: 17px;
+    background-color: transparent;      
+}
+
+.card-individual {
+    display: flex;
+    flex-direction: column;   
+    width: 340px;
+    height: 380px;      
+    background-color: white;
+    padding: 0px 30px;  
+    justify-content: space-evenly;
+    box-shadow: 10px 10px 64px -16px rgba(0,0,0,0.44);
+}
+
+.card-one, .card-two , .card-three {
+    display: flex;   
+    flex-direction: column;       
+}
+
+/*-- Section / questions Web ---------------------------------------*/
+
+.contenedor-questions {
+    background-color:rgba(255, 198, 0, 1);   
+    display: flex;
+    flex-direction: column;    
+    gap: 35px;   
+    width: 1319px;
+    height: 500px;
+    margin: 0 auto;   
+    margin-top: 100px;
+}
+
+.input {
+    display: flex;   
+    flex-direction: row;
+    gap: 20px;   
+    padding-bottom: 137px;
+    padding-top: 50px;
+}
+
+.text h3 {
+    padding: 10px 10px;
+    font-weight: 600;
+    color: #292E47;
+    font-size: 40px;    
+    text-align: center; 
+    padding-bottom: 25px; 
+    padding-top: 136px;
+}
+
+.text p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #292E47;
+    text-align: center; 
+    padding-bottom: 25px;    
+}
+
+.input .input-email {
+    width: 393px;
+    height: 80px;
+    padding-left:10px;
+    border: none;
+    padding-left: 70px;
+}
+
+.input-email {          
+    background-size: 25px;  
+    color: rgba(41, 46, 71, 1);
+    width: 10px;
+    height: 10px;
+    padding-left: 15px;   
+    font-size: 17px;     
+}
+
+.input img {    
+    position: absolute;
+    padding-left: 20px;  
+}
+
+.icono {
+    position: relative;
+    display: flex;
+    align-items: center;        
+}
+
+.btn-question{
+    display: flex;
+    text-decoration: none;
+    width: 198px;
+    height: 80px;
+    font-size: 17px;
+    background-color: #072AC8;
+    font-weight: 500;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border: none;        
+}
+
+/*-- Section / information-Web -------------------------------------------------*/
+
+.information-web {
+    background-color: #E5E5E5;
+    width: 1320px;
+    height: 242px;  
+    display: flex; 
+    margin: 0 auto;   
+    padding: 0 5%;
+    justify-content: space-between;     
+    padding-top: 220px;
+    align-items: center;  
+    padding-bottom: 150px;  
+}
+
+.direction-web {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #6B708D;
+    font-size: 17px;    
+}
+
+.items {
+    display: flex;   
+    flex-direction: column; 
+    text-decoration: none;   
+}
+
+.items a {
+    text-decoration: none;
+    color: #6B708D;
+    font-size: 17px;
+    padding-left: 100px;    
+}
+
+.items-firts-line , .items-second-line {
+    padding: 20px;
+}
+
+.information-mobile {
+    display: none;
+}
+
+
+
+
+}
+
+

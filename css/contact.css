@@ -11,68 +11,20 @@ body {
     font-family: "roboto","nunito sans","Helvetica", "sans-serif"; 
 }
 
-h1,h2,h3,h4{
-    font-weight:400;
-}
 
-/*--header--------------------------------------------------------------------------------*/
+/*--- Formulario Mobile-------------------------------------------------------------*/
 
-header {
-    display: flex;
-    padding: 0 11.80%;
-    justify-content: space-between;     
-    padding-top: 70px;
-    align-items: center;
-
-    position: fixed;
-    top: 0;
-    right: 100px;
-    left: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
-    background-color: #E5E5E5;     
-}
-
-
-.nav-bar a {
-    font-size: 17px;
-    color: rgba(107, 112, 141, 1);
-    font-weight: 500;
-    text-decoration: none;    
-} 
-
-.nav-bar{
-    gap: 60px;   
-    display: flex;
-    
-}
-
-.btn-primario {
-    display: flex;
-    text-decoration: none;
-    width: 150px;
-    height: 52px;
-    font-size: 17px;
-    background-color: #072AC8;
-    font-weight: 500;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    text-decoration: none;
-}
-/*-- Section 1 / Formulario----------------------------------------------------*/
 .contenedor-form {
     display: flex;
-    flex-direction: column;
-    padding: 0 11.80%;
-    margin-top: 246px;    
-      
+    flex-direction: column;  
+    padding-left: 18px;
+    padding-bottom: 15px;  
+    width: 1100px; 
 }
 
 .contenedor-form ::placeholder { 
     padding-left: 15px;   
-    font-size: 20px;    
+    font-size: 15px;    
     font-family: roboto;    
     align-content: center;
 }
@@ -82,59 +34,50 @@ header {
     color: #6B708D;
 }
 
-.contenedor-form h2 {
-    font-size: 60px;
-    font-weight: 500;
-    color: #292E47;
-    margin-bottom: 80px;
+.contenedor-form h2 {    
+    font-size: 30px; 
+    color:rgba(41, 46, 71, 1);
+    font-weight: 600;  
+    padding-bottom: 15px;   
 }
 
-.div-name {
-    padding-bottom: 40px;
+.div-global{
+    width: 350px;
 }
+
 .form-name {
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 1100px;
-    height: 70px;   
+    width: 350px;
+    height: 45px;   
     border: none;
-    background-color:rgba(107, 112, 141, 0.1); 
-      
+    background-color:rgba(107, 112, 141, 0.1);    
 }
 
 .form-email {   
-    padding-top: 10px;
-    margin-bottom: 50px; 
-    width: 530px;
-    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    width: 350px;
+    height: 45px;
     border: none;    
     background-color:rgba(107, 112, 141, 0.1);  
 } 
 
 .form-number {
-    
-    width: 530px;
-    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 350px;
+    height: 45px;
     border: none;    
     background-color:rgba(107, 112, 141, 0.1);    
 }
 
-.email-phone {    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 530px;
-    height: 70px;
-    gap: 40px;    
-    padding-bottom: 50px;
-}
-
 .message {
-    margin-top: 70px;
+    margin-top: 15px;
 }
 
 .form-text-area {
-    width: 1100px;
+    width: 350px;
     height: 200px;
     border: none; 
     margin-top: 10px;
@@ -145,65 +88,129 @@ header {
 }
 
 .message  textarea {
-    padding-top: 22px;
+    padding-top: 15px;
 }
 
-.btn-form{
+.btn-form {
     display: flex;
     text-decoration: none;
-    width: 1100px;
-    height: 80px;
+    width: 350px;
+    height: 45px;
     font-size: 17px;
     background-color: #072AC8;
     font-weight: 500;
     color: white;
     align-items: center;
     justify-content: center;  
-    border: none;  
-    margin-bottom:140px ;
-    margin-top: 40px;
+    border: none;     
 }
 
 
-/*-- Section 2 / information---------------------------------------------------*/
+/* Medias Queries - Web------------------------------------------------------------------*/
+@media screen and (min-width: 1000px) {
 
-.information  {
-    background-color: #E5E5E5;
-    width: 1320px;
-    height: 242px;  
-    display: flex; 
-    margin: 0 auto;   
-    padding: 0 5%;
-    justify-content: space-between;     
-    align-items: center;    
-}
-
-.direction {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.direction{
-    color: #6B708D;
-    font-size: 17px;
-}
-
-.items {
-    display: flex;   
-    flex-direction: column; 
-    text-decoration: none;   
-}
-
-.items a{
-    text-decoration: none;
-    color: #6B708D;
-    font-size: 17px;
-    padding-left: 100px;
+    .contenedor-form {
+        padding: 0 11.80%;
+        display: flex;
+        justify-content: center;
+        max-width: 1440px;
+        width: 100%;  
+        margin: 0 auto;
+        margin-top: 146px; 
+    } 
     
+    .contenedor-form ::placeholder { 
+        padding-left: 15px;   
+        font-size: 20px;    
+        font-family: roboto;    
+        align-content: center;
+    }
+    
+    .contenedor-form label {
+        font-size: 20px;
+        color: #6B708D;
+    }
+    
+    .contenedor-form h2 {
+        font-size: 60px;
+        font-weight: 500;
+        color: #292E47;
+        margin-bottom: 80px;
+    }
+    
+    .div-global {
+        padding-bottom: 40px;
+    }
+
+    .form-name {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 1100px;
+        height: 70px;   
+        border: none;
+        background-color:rgba(107, 112, 141, 0.1); 
+    }
+    
+    .form-email {   
+        padding-top: 10px;
+        margin-bottom: 50px; 
+        width: 530px;
+        height: 70px;
+        border: none;    
+        background-color:rgba(107, 112, 141, 0.1);  
+    } 
+    
+    .form-number {
+        
+        width: 530px;
+        height: 70px;
+        border: none;    
+        background-color:rgba(107, 112, 141, 0.1);    
+    }
+    
+    .email-phone {    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 530px;
+        height: 70px;
+        gap: 40px;    
+        padding-bottom: 50px;
+    }
+    
+    .message {
+        margin-top: 70px;
+    }
+    
+    .form-text-area {
+        width: 1100px;
+        height: 200px;
+        border: none; 
+        margin-top: 10px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;    
+        background-color:rgba(107, 112, 141, 0.1);    
+    }
+    
+    .message  textarea {
+        padding-top: 22px;
+    }
+    
+    .btn-form {
+        display: flex;
+        text-decoration: none;
+        width: 1100px;
+        height: 80px;
+        font-size: 17px;
+        background-color: #072AC8;
+        font-weight: 500;
+        color: white;
+        align-items: center;
+        justify-content: center;  
+        border: none;  
+        margin-bottom:140px ;
+        margin-top: 40px;
+    }
 }
 
-.items-firts-line , .items-second-line{
-    padding: 20px;
-    
-}

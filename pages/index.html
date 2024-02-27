@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../css/mobile.css" />
     <title>Circle</title>
   </head>
   <body>
@@ -41,9 +41,9 @@
         </svg>
       </div>
       <nav class="nav-bar">
-        <a href="#">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">Services</a>
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
       </nav>
       <a class="btn-primario" href="#">Contact Us</a>
     </header>
@@ -51,7 +51,6 @@
       <!-- Section 1 / hero--------------------------------------------------->
 
       <section class="contenedor-hero">
-        
         <div class="hero">
           <h1>Empower Your Business With Stunning Design!</h1>
           <p class="parrafo">
@@ -66,16 +65,22 @@
         </div>
 
         <div class="imagenes">
-          <img class="tarjeta-uno" src="./assets/hero-section/card-1.png" alt="">
-          <img class="tarjeta-dos" src="./assets/hero-section/card-2.png" alt="">
+          <img
+            class="tarjeta-uno"
+            src="./assets/hero-section/card-1.png"
+            alt=""
+          />
+          <img
+            class="tarjeta-dos"
+            src="./assets/hero-section/card-2.png"
+            alt=""
+          />
           <img
             class="tarjeta-hero"
             src="./assets/hero-section/hero-image.png"
             alt=""
           />
         </div>
-
-     
       </section>
 
       <!-- Section 2 / logos------------------------------------------------------->
@@ -92,7 +97,7 @@
 
       <!-- Section 3 / Projects--------------------------------------------------->
 
-      <section class="contenedor-projects">
+      <section id="projects" class="contenedor-projects">
         <h3>Recent Projects</h3>
 
         <div class="cards-projects">
@@ -127,7 +132,7 @@
 
       <!-- Section 4 / stickers-------------------------------------------------->
 
-      <section class="contenedor-reviews">
+      <section class="contenedor-reviews-web">
         <div>
           <img
             class="one"
@@ -140,19 +145,19 @@
             alt=""
           />
         </div>
-        <div class="second-column">
+        <div class="second-column-web">
           <h3 class="title">Hear What Our Clients Have to Say</h3>
           <p>
             “Circle helped us through every stage of our startup. <br />
             We really enjoyed working with you.”
           </p>
-          <div class="profile-reviewed">
+          <div class="profile-reviewed-web">
             <img
               class="five"
               src="./assets/testimonial-section/profile.png"
               alt=""
             />
-            <div class="info-reviews">
+            <div class="info-reviews-web">
               <span class="span-one">Kristin Watson</span><br />
               <span class="span-two">Booking.com</span>
             </div>
@@ -174,10 +179,10 @@
 
       <!-- Section 5 / services--------------------------------------------------->
 
-      <section class="contenedor-services">
+      <section id="services" class="contenedor-services">
         <h2>Our Services</h2>
         <div class="card-services">
-          <div class="card-individual">
+          <div class="card-individual card-one">
             <img src="./assets/services-section/icons/1.svg" alt="" />
             <h3>User Interface Design</h3>
             <p>
@@ -187,7 +192,7 @@
             <a href="#">Learn more</a>
           </div>
 
-          <div class="card-individual">
+          <div class="card-individual card-two">
             <img src="./assets/services-section/icons/2.svg" alt="" />
             <h3>User Experience Design</h3>
             <p>
@@ -197,7 +202,7 @@
             <a href="#">Learn more</a>
           </div>
 
-          <div class="card-individual">
+          <div class="card-individual card-three">
             <img src="./assets/services-section/icons/3.svg" alt="" />
             <h3>Application Development</h3>
             <p>
@@ -210,29 +215,33 @@
       </section>
 
       <!-- Section 6 / questions --------------------------------------------------->
-      <section>
-        <div class="contenedor-questions">
+      <section class="contenedor-questions">
+        <div class="text">
           <h3>Do you have any questions?</h3>
           <p>Let us help you!</p>
           <div class="input">
-            <input
-              class="input-email"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Enter your email"
-              required
-            />
-            <div class="input-btn">
-              <button class="btn-question">Subscribe</button>
+            <div class="icono">
+              <img
+                src="../midterm-project/assets/newsletter/icon/mail.svg"
+                alt=""
+              />
+              <input
+                class="input-email"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
             </div>
+            <button class="btn-question">Subscribe</button>
           </div>
         </div>
       </section>
 
       <!-- Section 7 / information--------------------------------------------------->
-      <footer class="information">
-        <div class="direction">
+      <footer class="information-web">
+        <div class="direction-web">
           <svg
             width="62"
             height="20"
@@ -278,5 +287,6 @@
         </div>
       </footer>
     </main>
+    <script src="./index.js"></script>
   </body>
 </html>

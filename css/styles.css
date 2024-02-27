@@ -30,7 +30,7 @@ header {
     padding-left: 100px;
     padding-right: 100px;
     background-color: #E5E5E5;    
-    
+    z-index: 50;    
 }
 
 .nav-bar :first-child {
@@ -172,9 +172,8 @@ h1 {
     font-size: 40px;
     padding-bottom: 70px;
     line-height: 46.88px;    
-    font-weight: 500; 
+    font-weight: 600; 
 }
-
 
 .cards-projects {
     display: flex;
@@ -182,7 +181,7 @@ h1 {
     justify-content: space-between;     
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     width: 340px;
@@ -206,8 +205,7 @@ h1 {
     justify-content: space-evenly;
 }
 
-
-.white-background h4  {
+.white-background h4 {
     font-size: 24px;
     font-weight: 500;
     color: #292E47;
@@ -230,7 +228,7 @@ h1 {
 
 /*-- Section 4 / stickers---------------------------------------------------*/
 
-.contenedor-reviews { 
+.contenedor-reviews-web { 
     background-image:url("../assets/testimonial-section/orbit.png" );  
     background-repeat: no-repeat; 
     background-position: center;   
@@ -244,73 +242,72 @@ h1 {
     margin: 0 auto 200px auto;
 }
 
-.contenedor-reviews > div {
+.contenedor-reviews-web > div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
 }
 
-.contenedor-reviews .second-column {
+.contenedor-reviews-web .second-column-web {
     justify-content: center;
     align-items: center;
     gap: 40px;
 }
 
-.contenedor-reviews .second-column .profile-reviewed {
+.contenedor-reviews-web .second-column-web .profile-reviewed-web {
     display: flex;
     align-items: center;
     gap: 14px;
 }
 
-.contenedor-reviews > div:last-of-type {
+.contenedor-reviews-web > div:last-of-type {
     align-items: flex-end;
 }
 
 
 /* texto----*/
-h3 {
+.contenedor-reviews-web h3 {
     font-size: 37px;
     font-weight: bold;
     color: white;
     text-align: center;     
 }
 
-.second-column p {
+.second-column-web p {
     color: #FFC600;
     font-size: 23px;    
     text-align: center; 
-    padding-top: 70px;
-    
+    padding-top: 70px;    
 }
 
-.profile-reviewed .five {
+.profile-reviewed-web .five {
     width: 50px; 
     height: 50px; 
     overflow: hidden;
     border-radius: 50%;  
 }
 
-.profile-reviewed {
+.profile-reviewed-web {
     padding-top: 105px;
 }
 
-.info-reviews, .span-one {
+.info-reviews-web, .span-one {
     color: #A2D6F9;    
 } 
 
-.info-reviews, .span-two {
+.info-reviews-web, .span-two {
     color: white;     
 }
 
-.contenedor-reviews img{
+.contenedor-reviews-web img {
     width: 50%;    
 }  
 
 
 /*-- Section 5 / services---------------------------------------------------*/
 
-.contenedor-services{
+.contenedor-services { /**/
     display: flex;
     flex-direction: column;    
     padding: 0 11.80%;
@@ -318,22 +315,22 @@ h3 {
     align-content: center;     
 }
 
-.contenedor-services h2{
+.contenedor-services h2{ /**/
     padding-bottom: 70px;    
 }
 
-.contenedor-services img {
+.contenedor-services img {  /**/
     height: 40px;
     width: 40px;  
 }
 
-.card-services {
+.card-services { /**/
     display: flex;
     width: 100%;
     justify-content: space-between;  
 }
 
-.card-services img {
+.card-services img {  /**/
     background-color: rgba(236, 247, 255, 1);
     width: 80px;
     height: 80px;
@@ -341,7 +338,7 @@ h3 {
     border-radius: 50%;    
 }
 
-.card-individual {
+.card-individual { /**/
     display: flex;
     flex-direction: column;   
     width: 340px;
@@ -354,27 +351,27 @@ h3 {
 }
 
 
-.contenedor-services h2 {
+.contenedor-services h2 { /**/
     font-size: 40px; 
     color:rgba(41, 46, 71, 1);
     font-weight: 600;   
 }
 
-.contenedor-services h3 {
+.contenedor-services h3 { /**/
     font-size: 24px; 
     color: rgba(41, 46, 71, 1);
     text-align: left;
    
 }
 
-.contenedor-services p {
+.contenedor-services p { /**/
     font-size: 20px; 
     position: relative;
     bottom: 20px;
     color: rgba(107, 112, 141, 1);     
 }
 
-.contenedor-services a {
+.contenedor-services a { /**/
     color: #072AC8;
     text-decoration: none;   
     font-size: 17px;
@@ -384,63 +381,73 @@ h3 {
 
 /*-- Section 6 / questions---------------------------------------------------*/
 
+
 .contenedor-questions {
+    background-color:rgba(255, 198, 0, 1);   
+    display: flex;
+    flex-direction: column;    
+    gap: 35px;   
     width: 1319px;
     height: 500px;
-    background-color:rgba(255, 198, 0, 1);    
-    display: flex;
-    align-items: center;
-    justify-content: center;  
-    margin: 0 auto; 
-    flex-direction: column;
+    margin: 0 auto;   
     margin-top: 200px;
 }
 
-.contenedor-questions h3 {
+.input {
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.text h3 {
+    padding: 10px 10px;
+    font-weight: 600;
     color: #292E47;
     font-size: 40px;    
-    padding-bottom: 20px;
+    text-align: center; 
+    padding-bottom: 25px; 
+    padding-top: 136px;
 }
 
-.contenedor-questions p {
+.text p {
     font-size: 20px;
+    font-weight: 400;
     color: #292E47;
-    text-align: center;  
-    padding-bottom: 50px;  
+    text-align: center; 
+    padding-bottom: 25px;    
 }
 
-.contenedor-questions .input{
-    display: flex;    
-}
-
-.contenedor-questions .input .input-email {
-    display: flex;
-    justify-content: center;
+.input .input-email {
     width: 393px;
-    height:80px ;
-    padding-left: 70px;  
-    gap: 20px;  
-    color: #292E47;
-    font-size: 17px;
-    border: none; 
+    height: 80px;
+    padding-left:10px;
+    border: none;
+    padding-left: 70px;
 }
 
-.input-email {
-    background-image: url(../assets/newsletter/icon/mail.svg);
-    background-repeat: no-repeat; 
-    background-size: 40px;
-    align-items:flex-start;    
+.input-email {          
+    background-size: 25px;  
+    color: rgba(41, 46, 71, 1);
+    width: 10px;
+    height: 10px;
+    padding-left: 15px;   
+    font-size: 17px;     
 }
 
-.input {
+.input img {    
+    position: absolute;
+    padding-left: 20px;   
+}
+
+.icono {
     position: relative;
+    display: flex;
+    align-items: center;        
 }
 
-.input-btn{
-    padding-left: 20px;    
-}
-
-.input-btn .btn-question{
+.btn-question{
     display: flex;
     text-decoration: none;
     width: 198px;
@@ -450,14 +457,14 @@ h3 {
     font-weight: 500;
     color: white;
     align-items: center;
-    justify-content: center;  
-    border: none;       
+    justify-content: center;
+    border: none;    
 }
 
 
 /*-- Section 7 / information---------------------------------------------------*/
 
-.information  {
+.information-web {
     background-color: #E5E5E5;
     width: 1320px;
     height: 242px;  
@@ -469,13 +476,13 @@ h3 {
     align-items: center;    
 }
 
-.direction {
+.direction-web {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.direction{
+.direction-web {
     color: #6B708D;
     font-size: 17px;
 }
@@ -486,7 +493,7 @@ h3 {
     text-decoration: none;   
 }
 
-.items a{
+.items a {
     text-decoration: none;
     color: #6B708D;
     font-size: 17px;
@@ -494,7 +501,7 @@ h3 {
     
 }
 
-.items-firts-line , .items-second-line{
+.items-firts-line , .items-second-line {
     padding: 20px;
     
 }
