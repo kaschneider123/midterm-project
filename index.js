@@ -3,7 +3,6 @@
 const btnOpen = document.getElementById('nav-open')
 const btnClose = document.getElementById('nav-close')
 
-
 btnOpen.addEventListener('click', ()=>{
     btnClose.classList.remove('hidden')
 })
@@ -20,14 +19,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Verificar si el elemento con id 'contactForm' existe
     if (contactForm) {
-        contactForm.addEventListener('submit', function (event) {
-            if (!validateForm()) {
+        contactForm.addEventListener('submit', function (event) {            
+            if (validateForm()) {
                 event.preventDefault();
             }
         });
     } 
 
     function validateForm() {
+        console.log('hola')
         let fullName = document.getElementById('form-name').value.trim();
         let email = document.getElementById('form-email').value.trim();
         let phone = document.getElementById('form-number').value.trim();
@@ -40,15 +40,17 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // Validar formato de email
-        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
             alert('Por favor ingresar un email valido.');
             return false;
         }
 
+       
         // Validar nombre no igual a "Ironhack"
         if (fullName.toLowerCase() === 'ironhack') {
             alert('No puedes ser Ironhack, porque ¡yo soy Ironhack!');
+
             return false;
         }
 
