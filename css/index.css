@@ -28,6 +28,7 @@ header {
     max-width: 1440px;
     width: 100%;  
     margin: 0 auto;
+    
 }
 
 header .btn-mobile {
@@ -177,7 +178,8 @@ h1 {
     overflow-x: scroll;
     width: 100%;
     padding: 10px;  
-    gap: 10px;    
+    gap: 10px;  
+    padding-bottom: 40px;  
 }
 
 .card-hijo { 
@@ -459,9 +461,16 @@ padding-left: 10px;
         display: none;
     }
 
+ /*    .back-header {
+        max-width: 1440px;
+        width: 100%;
+        background-color: #c72e2e;
+        display: flex;
+    } */
+
     header {
         display: flex;
-        padding: 0 11.80vw;
+        padding: 0 ;
         justify-content: space-between;         
         align-items: end;
         height: 100px;
@@ -469,6 +478,8 @@ padding-left: 10px;
         top: 0;
         background-color: #E5E5E5;    
         z-index: 50;  
+        width: 100%;
+        max-width: 1100px;
     }
 
     .icon-contenedor {
@@ -507,7 +518,7 @@ padding-left: 10px;
 
     .contenedor-hero {
         display: flex;
-        padding: 0 11.80vw;
+        padding: 0 ;       
         align-items: center;
         padding-top: 50px;
     }
@@ -593,10 +604,13 @@ padding-left: 10px;
     
     .contenedor-hero {
         display: flex;
-        padding: 0 11.80vw;
+        padding: 0 ;
+        max-width: 1100px;
+        width: 100%;
         align-items: center;
-        padding-top: 200px;
+        padding-top: 100px;
         padding-bottom: 130px;
+        margin: 0 auto;
     }
     
     .hero {
@@ -652,10 +666,14 @@ padding-left: 10px;
 
     .contenedor-projects-web {
         display: flex;
-        flex-direction: column;    
-        padding: 200px 11.80vw;
+        flex-direction: column;         
+        max-width: 1100px;
+        padding-top: 200px;
+        width: 100%;
         align-items:flex-start;
-        align-content: center;    
+        align-content: center;  
+        margin: 0 auto;  
+        padding-bottom: 200px;
     }
 
     .contenedor-projects-web h3 {
@@ -669,27 +687,33 @@ padding-left: 10px;
     .cards-projects-web {
         display: flex;
         width: 100%;
-        justify-content: space-between;     
+        justify-content: space-between;   
+        gap: 20px;
+        row-gap: 40px;
+        flex-wrap: wrap;  
     }
 
     .card {
         display: flex;
         flex-direction: column;
-        width: 340px;
+        width: 100%;
+        max-width: 340px;
         height: 444px;
         box-shadow: 10px 10px 64px -16px rgba(0,0,0,0.44);
     }
 
     .card img {
         height: 240px;
-        width: 340px;  
+        width: 100%;
+        max-width: 340px;  
     }
 
     .white-background {
         background-color: white;
         padding-left: 30px;
         height: 204px;
-        width: 340px;
+        width: 100%;
+        max-width: 340px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -729,7 +753,8 @@ padding-left: 10px;
         background-color:  #292E47;   
         background-size: contain;
         display: flex;
-        max-width: 1319px;
+        max-width: 1320px;
+        width: 100%;
         height: 622px;
         justify-content: center;  
         padding: 51px 68px 73px 67px;
@@ -804,11 +829,14 @@ padding-left: 10px;
     .contenedor-services {
         display: flex;
         flex-direction: column;    
-        padding: 0 11.80vw;
+        padding: 0 ;
+        max-width: 1100px;
+        margin: 0 auto;
         align-items:flex-start;
         align-content: center;    
         padding-bottom: 100px; 
         padding-top: 100px;
+        gap: 40px;
     }
 
     .card-services {
@@ -867,7 +895,8 @@ padding-left: 10px;
     .card-individual {
         display: flex;
         flex-direction: column;   
-        width: 340px;
+        max-width: 340px;
+        width: 100%;
         height: 380px;      
         background-color: white;
         padding: 0px 30px;  
@@ -887,7 +916,8 @@ padding-left: 10px;
         display: flex;
         flex-direction: column;    
         gap: 35px;   
-        width: 1319px;
+        width: 100%;
+        max-width: 1320px;
         height: 500px;
         margin: 0 auto;   
         margin-top: 100px;
@@ -965,11 +995,12 @@ padding-left: 10px;
 
     .information-web {
         background-color: #E5E5E5;
-        width: 1320px;
+        width: 100%;
+        max-width: 1100px;
         height: 242px;  
         display: flex; 
         margin: 0 auto;   
-        padding: 0 5%;
+        padding: 0 ;
         justify-content: space-between;     
         padding-top: 220px;
         align-items: center;  

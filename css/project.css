@@ -17,14 +17,13 @@ body {
     display: flex;
     flex-direction: column;  
     padding-left: 15px;
-    padding-bottom: 15px;  
+    padding-bottom: 15px;      
 }
 
 .card-simplify {
     display: flex;
     flex-direction: column;
     width: 100%;
-    
     
 }
 
@@ -35,6 +34,7 @@ body {
     box-shadow: 50px 50px 64px -40px rgba(169, 60, 231, 0.5);
     margin-top: 15px;
     margin-bottom: 15px;
+   
 }
 
 .title-simplify h2 {
@@ -113,10 +113,13 @@ body {
     .contenedor-simplify {
         display: flex;
         flex-direction: column;    
-        padding: 0 11.8vw;    
+        padding: 0 ;
         align-content: center;  
         justify-content: center;
         align-items: center; 
+        margin: 0 auto;
+        max-width: 1100px;
+        width: 100%;
     }
 
     .title-simplify {
@@ -185,7 +188,7 @@ body {
     /*-- Section 2 / Other Projects - Web---------------------------------------------------*/
 
     .contenedor-projects {
-        display: flex;
+        /* display: flex; */
         flex-direction: column;    
         padding: 0 11.80%;
         align-items:flex-start;

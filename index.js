@@ -1,3 +1,5 @@
+import { getProjects, renderizar_proyectos } from './utils.js'
+
 /* Menu hamburguesa - abre y cierra-------------------------------*/
 
 const btnOpen = document.getElementById('nav-open')
@@ -14,7 +16,7 @@ btnClose.addEventListener('click', ()=>{
 
 /* Validacion del Formulario Contacto--------------------------------------*/
 
-document.addEventListener('DOMContentLoaded', function () {
+function validateForm() {
     let contactForm = document.getElementById('contactForm');
 
     // Verificar si el elemento con id 'contactForm' existe
@@ -56,4 +58,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
         return true;
     }
+}
+
+async function showProjects() {
+    const proyectos = await getProjects()
+    /* Obtener los primeros 3 proyectos */
+    let tres_primeros_proyectos = [...proyectos].splice(proyectos.length - 3, 3)
+    renderizar_proyectos(tres_primeros_proyectos, 'proyectos-recientes', 'web')
+    renderizar_proyectos(tres_primeros_proyectos, 'proyectos-recientes-mobile', 'mobile')
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    validateForm()
+
+    showProjects()
 });
