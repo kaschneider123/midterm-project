@@ -27,8 +27,7 @@ header {
     height: 64px;  
     max-width: 1440px;
     width: 100%;  
-    margin: 0 auto;
-    
+    margin: 0 auto;    
 }
 
 header .btn-mobile {
@@ -57,7 +56,7 @@ header .btn-mobile {
     display: none;
 }
 
-.mobile-open{
+.mobile-open {
     width: 50vw;
     height: 100vh;
     background-color: #E5E5E5;
@@ -106,7 +105,6 @@ nav a:active {
 }
 
 /*-- Section 1 / Hero Mobile------------------------------------------------------------*/
-
 .contenedor-hero {
     padding: 0 4.35%; 
 }
@@ -158,7 +156,7 @@ h1 {
 /*-- Section 2 / logos --------------------------------------------------------*/
     /* Section logos en mobile apagada*/
 
-/*-- Section 3 / Projects Mobile----------------------------------------------------------*/
+/*-- Section 3 / Projects Mobile------------------------------------------------*/
 .cards-projects {
     display: flex;  
     flex-direction: row;     
@@ -217,7 +215,6 @@ h1 {
 }
 
 /*-- Section 4 / stickers Mobile----------------------------------------------------------*/
-
 .second-column-web {
     background-color: #292E47;      
     display: flex;
@@ -275,7 +272,6 @@ h1 {
 .info-reviews-web span{
 padding-left: 10px;
 }
-
 
 /*-- Section 5 / services Mobile---------------------------------------------------*/
 .contenedor-services img { 
@@ -419,8 +415,7 @@ padding-left: 10px;
     border: none;    
 }
 
-/*-- Section 7 / information-------------------------------------------------*/
-
+/*-- Section 7 / information---------------------------------------------------*/
 .information-mobile  {
     background-color: #E5E5E5;   
     display: flex;
@@ -437,7 +432,6 @@ padding-left: 10px;
 }
 
 /*-- Medias Query web ------------------------------------------------------------*/
-
 .contenedor-logo {
     display: none;
 }
@@ -455,31 +449,35 @@ padding-left: 10px;
 }
 
 @media screen and (min-width: 1000px){
-
-
     .btn-mobile {
         display: none;
     }
 
- /*    .back-header {
-        max-width: 1440px;
-        width: 100%;
-        background-color: #c72e2e;
-        display: flex;
-    } */
-
     header {
         display: flex;
-        padding: 0 ;
-        justify-content: space-between;         
+        padding: 0 ;                
         align-items: end;
-        height: 100px;
+        height: 100px; 
+        position: sticky; 
+        background-color: #E5E5E5; 
+        display: flex;        
         position: sticky;
         top: 0;
-        background-color: #E5E5E5;    
-        z-index: 50;  
+        z-index: 50;     
+    }
+
+    .header-back {
         width: 100%;
         max-width: 1100px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0  auto;
+    }
+
+    .contenedor-header {
+        background-color: #E5E5E5;    
+        width: 100%;
+        max-width: 1440px;                  
     }
 
     .icon-contenedor {
@@ -514,7 +512,6 @@ padding-left: 10px;
     .btn-contact{
         display: flex;
     }    
-
 
     .contenedor-hero {
         display: flex;
@@ -565,7 +562,7 @@ padding-left: 10px;
         color:  #6B708D;
     }
 
-    .tarjeta-hero{
+    .tarjeta-hero {
         width: 100%;
     }
     
@@ -910,7 +907,6 @@ padding-left: 10px;
     }
 
     /*-- Section 6 / questions web ---------------------------------------*/
-
     .contenedor-questions {
         background-color:rgba(255, 198, 0, 1);   
         display: flex;
@@ -992,7 +988,6 @@ padding-left: 10px;
     }
 
     /*-- Section 7 / information web -------------------------------------------------*/
-
     .information-web {
         background-color: #E5E5E5;
         width: 100%;
