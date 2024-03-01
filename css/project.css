@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: "roboto","nunito sans","Helvetica", "sans-serif"; 
+}
+
+/*-- Section 1 / Simplify Mobile--------------------------------------------------*/
+.contenedor-simplify {
+    display: flex;
+    flex-direction: column;  
+    padding-left: 15px;
+    padding-bottom: 15px;      
+}
+
+.card-simplify {
+    display: flex;
+    flex-direction: column;
+    width: 100%;    
+}
+
+.card-simplify img {      
+    width: 100%;
+    max-width: 350px;
+    height: 152px;
+    box-shadow: 50px 50px 64px -40px rgba(169, 60, 231, 0.5);
+    margin-top: 15px;
+    margin-bottom: 15px;   
+}
+
+.title-simplify h2 {
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.sub-title p {
+    font-size: 18px;
+    color: #6B708D;   
+}
+
+.white-parrafo-mobile {
+    background-color: white;
+    width: 350px;   
+    height: 380px;
+    padding: 10px;     
+    overflow-y: scroll;
+}
+
+.white-parrafo-mobile p {    
+    font-size: 17px;
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    padding-top: 15px;
+    color: #6B708D;    
+}
+
+.btn .secundario {
+    display: flex;
+    text-decoration: none;
+    width: 150px;
+    height: 52px;
+    font-size: 17px;    
+    background-color: #E5E5E5;
+    font-weight: 500;
+    color: #6B708D;    
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.btn .primario {
+    display: flex;
+    text-decoration: none;
+    width: 150px;
+    height: 52px;
+    font-size: 17px;
+    background-color: #072AC8;
+    font-weight: 500;
+    color: white;    
+    align-items: center;
+    justify-content: center;
+    border: none; 
+}
+
+.btn {
+    display: flex;
+    gap: 55px;    
+    align-items: center;
+    padding-right: 25px;
+    padding-top: 15px;
+}
+
+/* Medias Queries -Web------------------------------------------------------------------*/
+
+@media screen and (min-width: 1000px) {
+
+/*-- Section 1 / Simplify - Web-------------------------------------------------------*/
+.contenedor-simplify {
+    display: flex;
+    flex-direction: column;    
+    padding: 0 ;
+    align-content: center;  
+    justify-content: center;
+    align-items: center; 
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;    
+}
+
+.title-simplify {
+    display: flex;
+    flex-direction: column;  
+    padding-top: 146px; 
+}
+
+.title-simplify h2 {
+    font-size: 60px;
+    font-weight: 500;
+    color: #292E47;
+    padding-bottom: 20px;
+}
+
+.sub-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1100px;
+}
+
+.sub-title p {
+    font-size: 20px;
+    color: #6B708D;
+}
+
+.card-simplify p {
+    font-size: 20px;
+    width: 100%;
+    max-width: 1100px;    
+    padding-top: 56px;
+    color: #6B708D;
+    line-height: 32px; 
+}
+
+.contenedor-simplify img {
+    margin-top: 80px;
+    width: 100%;
+    max-width: 1100px;
+    height: 544px;
+    box-shadow: 0px 0px 60px 2px rgba(190, 94, 245, 0.6);
+}
+
+.contenedor-simplify .btn {
+    display: none;
+}
+
+.white-parrafo-mobile {
+    background-color: transparent;
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    overflow-y: auto;    
+    color: #6B708D;   
+}
+
+.white-parrafo-web p {
+    width: 100%;
+    max-width: 1100px;
+    line-height: 24px;
+}
+
+/*-- Section 2 / Other Projects - Web---------------------------------------------------*/
+.contenedor-projects {   
+    flex-direction: column;    
+    padding: 0 11.80%;
+    align-items:flex-start;
+    align-content: center; 
+}
+
+.contenedor-projects h3 {
+    color: #292E47;
+    font-size: 40px;  
+    line-height: 46.88px;  
+    font-weight: 600;  
+}
+
+.cards-projects {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;     
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 444px;
+    box-shadow: 10px 10px 64px -16px rgba(0,0,0,0.44);
+}
+
+.card img {
+    height: 240px;
+    width: 340px;  
+}
+
+.white-background {
+    background-color: white;
+    padding-left: 30px;
+    height: 204px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.white-background h4 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #292E47;
+}
+
+.white-background p {
+    font-size: 17px;
+    color: #6B708D;
+    position: relative;
+    bottom: 20px;}
+
+.white-background a {
+    color: #072AC8;
+    text-decoration: none;   
+    font-size: 17px;
+    background-color: transparent;    
+}
+}
